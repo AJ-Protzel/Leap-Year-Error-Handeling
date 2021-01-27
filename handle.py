@@ -10,5 +10,7 @@ def checkYear(year):
   print("No, {} is not a leap year".format(year))
 
 year = input("Enter year: ") 
+while(year.isdigit() == 0):
+  year = input("Invalid number, Enter year: ")
 year = int(year)
 checkYear(year)
